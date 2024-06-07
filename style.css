@@ -1,0 +1,285 @@
+*{
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1110px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*header*/
+
+.header {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	background-size: cover;
+	background-image: url("./ico/title.png");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.header-title {
+	margin: 0;
+	color: white;
+	font-weight: 700;
+	font-size: 56xp; 
+	line-height: 130%;
+	text-align: center;
+}
+
+.header-subtitle {
+	color: white;
+	font-weight: bold;
+	font-size: 16xp; 
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.header-arrow{
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50px, 0);
+}
+
+/*portfolio*/
+
+.portfolio{
+	padding-top: 80px;
+	padding-bottom: 115px;
+	color: black;
+}
+
+.portfolio-header {
+	margin: 0;
+	margin-bottom: 70px;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 130%;
+	text-align: center;
+	color: black;
+}
+
+.portfolio-card-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	margin-bottom: 30px;
+	max-width: 540px;
+	background-color: white;
+	box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.45);
+	transition: transform 0.3s ease-in;
+}
+
+.card:hover {
+	transform: translateY(-15px);
+}
+
+.card-linc {
+	display: block;
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+	transition: color 0.3s ease-in;
+}
+
+.card-linc:hover {
+	color: blue;
+}
+
+.card:last-child {
+	margin-bottom: 0;
+}
+
+.card:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+.card-img {
+	margin-bottom: 20px;
+}
+
+.card-title {
+	margin: 0;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 130%;
+}
+
+/* Footer */
+
+.footer {
+	padding-top: 45px;
+	padding-bottom: 130px;
+	background: black;
+	color: white;
+}
+
+.footer-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-copyright {
+	max-width: 350px;
+	line-height: 130%;
+} 
+
+.footer-copyright-name {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 130%;
+}
+
+.footer-copyright p {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.footer-icons {
+	max-width: 350px;
+	transition: transform 0.3s ease-in;
+}
+
+.fico:hover {
+	transform: translateY(-10px);
+}
+	
+.footer-icons p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 130%;	
+}
+
+.footer-icons-row {
+	display: flex;
+}
+
+.footer-icons-row > * {
+	margin-left: 30px;
+}
+
+.footer-contacts {
+	max-width: 350px;
+}
+
+.footer-button {
+	height: 50px;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border: 3px solid white;
+	border-radius: 50px;
+	line-height: 44px;
+
+	color: white;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: all 0.3s ease-in;
+}
+
+.footer-button:hover {
+	background-color: white;
+	color: black;
+}
+
+.footer-contacts p {
+	margin-bottom: 15px 0;
+	font-size: 16px;
+	line-height: 130%;
+}
+
+/* project-travl */
+
+.project {
+	padding: 80px 0px 120px 0px;
+	text-align: center;
+	color: black;
+}
+
+.project-header {
+	margin: 0;
+	margin-bottom: 40px;
+	font-weight: bold;
+	font-size: 46px;
+	line-height: 130%;
+
+}
+
+.project-img {
+	margin-bottom: 70px;
+	max-width: 730px;
+}
+
+.project-discription {
+	margin: 0 auto;
+	max-width: 730px;
+	margin-bottom: 60px;
+}
+
+.project-discription p {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 150%;
+	color: black;
+}
+
+.project-btn-back {
+	height: 60px;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	border: 3px solid black;
+	border-radius: 50px;
+	line-height: 54px;
+
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;	
+
+	transition: all 0.3s ease-in;
+}
+
+.project-btn-back:hover {
+	background-color: black;
+	color: white;
+}
